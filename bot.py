@@ -5,6 +5,8 @@ from aiogram import Router, Bot, Dispatcher
 from aiogram.types import Message, WebAppInfo
 from aiogram.filters import CommandStart
 from aiogram.utils.keyboard import InlineKeyboardBuilder
+
+from config.py import BOT_TOKEN
 from app_battles import ft, main as flet_main
 
 
@@ -25,7 +27,7 @@ async def start(message: Message) -> None:
 
 
 async def main_bot() -> None:
-    bot = Bot("7121206864:AAGCAiPkh9XirsKIjnHj9cb9Nq0OR44Rr-o")
+    bot = Bot(BOT_TOKEN)
     dp = Dispatcher()
     dp.include_router(router)
 
