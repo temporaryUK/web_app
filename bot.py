@@ -6,14 +6,14 @@ from aiogram.types import Message, WebAppInfo
 from aiogram.filters import CommandStart
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
-from config.py import BOT_TOKEN
+from config import BOT_TOKEN, URL
 from app_battles import ft, main as flet_main
 
 
 def webapp_builder() -> InlineKeyboardBuilder:
     builder = InlineKeyboardBuilder()
     builder.button(
-        text='Click', web_app=WebAppInfo(url='https://1315-5-142-110-50.ngrok-free.app')
+        text='Click', web_app=WebAppInfo(url=URL)
     )
     return builder.as_markup()
 
