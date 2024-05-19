@@ -2,8 +2,17 @@
 
 An example of a minimal Flet app.
 
-To run the app:
+# Запуск
 
+Чтобы бот запустился, требуется получить
+токен в телеграме у BotFather и вставить его в config.py
 ```
-flet run [app_directory]
+BOT_TOKEN = ""
 ```
+Так же потребуетсся установить ngrok
+и так же вставить ссылку с локал соединения в config.py
+```
+URL = ""
+```
+
+Запуск осуществляется непосредственно через bot.py и app.py
